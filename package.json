@@ -3,7 +3,7 @@
     "displayName": "Wux Weapp Snippets",
     "description": "Wux Weapp Snippets for VS Code.",
     "icon": "wux-weapp-snippets.png",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "homepage": "https://github.com/wux-weapp/wux-weapp-snippets/blob/master/README.md",
     "bugs": {
         "url": "https://github.com/wux-weapp/wux-weapp-snippets/issues"
@@ -30,9 +30,21 @@
         "languages": [
             {
                 "id": "wxml",
+                "aliases": [
+                    "wxml",
+                    "wxml"
+                ],
                 "extensions": [
                     ".wxml"
-                ]
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "wxml",
+                "scopeName": "text.html.wxml",
+                "path": "./syntaxes/wxml.tmLanguage"
             }
         ],
         "snippets": [
