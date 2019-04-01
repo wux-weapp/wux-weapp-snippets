@@ -1,13 +1,19 @@
 {
-    "name": "Wux Weapp Snippets",
+    "name": "wux-weapp-snippets",
     "displayName": "Wux Weapp Snippets",
     "description": "Wux Weapp Snippets for VS Code.",
-    "icon": "ionic-4-snippets.png",
+    "icon": "wux-weapp-snippets.png",
     "version": "0.0.1",
+    "homepage": "https://github.com/wux-weapp/wux-weapp-snippets/blob/master/README.md",
+    "bugs": {
+        "url": "https://github.com/wux-weapp/wux-weapp-snippets/issues"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/wux-weapp/wux-weapp-snippets.git"
     },
+    "publisher": "skyvow",
+    "author": "skyvow",
     "license": "MIT",
     "engines": {
         "vscode": "^1.32.0"
