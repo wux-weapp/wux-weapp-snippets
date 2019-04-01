@@ -1,0 +1,39 @@
+{
+    "name": "Wux Weapp Snippets",
+    "displayName": "Wux Weapp Snippets",
+    "description": "Wux Weapp Snippets for VS Code.",
+    "icon": "ionic-4-snippets.png",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wux-weapp/wux-weapp-snippets.git"
+    },
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "keywords": [
+        "weapp",
+        "wxml",
+        "snippet"
+    ],
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "wxml",
+                "path": "./snippets/wxml.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/wxml.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/script.json"
+            }
+        ]
+    }
+}

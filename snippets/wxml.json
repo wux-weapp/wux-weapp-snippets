@@ -1,0 +1,527 @@
+{
+	"wux-animation-group": {
+		"prefix": "w-animation-group",
+		"body": "<wux-animation-group ${1:classNames=\"wux-animate--${2|fadeIn,fadeInDown,fadeInLeft,fadeInRight,fadeInUp,slideInUp,slideInDown,slideInLeft,slideInRight|}\"} in=\"${3}\">\n\t${0}\n</wux-animation-group>",
+		"description": "AnimationGroup"
+	},
+	"wux-button": {
+		"prefix": "w-button",
+		"body": "<wux-button ${1:theme=\"${2|stable,light,positive,calm,assertive,balanced,energized,royal,dark|}\"}>${0}</wux-button>",
+		"description": "Button"
+	},
+	"wux-icon": {
+		"prefix": "w-icon",
+		"body": "<wux-icon type=\"${1|ios,md|}-${2|add-circle-outline,add-circle,add,airplane,alarm,albums,alert,american-football,analytics,aperture,apps,appstore,archive,arrow-back,arrow-down,arrow-dropdown-circle,arrow-dropdown,arrow-dropleft-circle,arrow-dropleft,arrow-dropright-circle,arrow-dropright,arrow-dropup-circle,arrow-dropup,arrow-forward,arrow-round-back,arrow-round-down,arrow-round-forward,arrow-round-up,arrow-up,at,attach,backspace,barcode,baseball,basket,basketball,battery-charging,battery-dead,battery-full,beaker,bed,beer,bicycle,bluetooth,boat,body,bonfire,book,bookmark,bookmarks,bowtie,briefcase,browsers,brush,bug,build,bulb,bus,business,cafe,calculator,calendar,call,camera,car,card,cart,cash,cellular,chatboxes,chatbubbles,checkbox-outline,checkbox,checkmark-circle-outline,checkmark-circle,checkmark,clipboard,clock,close-circle-outline,close-circle,close,cloud-circle,cloud-done,cloud-download,cloud-outline,cloud-upload,cloud,cloudy-night,cloudy,code-download,code-working,code,cog,color-fill,color-filter,color-palette,color-wand,compass,construct,contact,contacts,contract,contrast,copy,create,crop,cube,cut,desktop,disc,document,done-all,download,easel,egg,exit,expand,eye-off,eye,fastforward,female,filing,film,finger-print,fitness,flag,flame,flash-off,flash,flashlight,flask,flower,folder-open,folder,football,funnel,gift,git-branch,git-commit,git-compare,git-merge,git-network,git-pull-request,glasses,globe,grid,hammer,hand,happy,headset,heart,heart-dislike,heart-empty,heart-half,help-buoy,help-circle-outline,help-circle,help,home,hourglass,ice-cream,image,images,infinite,information-circle-outline,information-circle,information,jet,journal,key,keypad,laptop,leaf,link,list-box,list,locate,lock,log-in,log-out,magnet,mail-open,mail-unread,mail,male,man,map,medal,medical,medkit,megaphone,menu,mic-off,mic,microphone,moon,more,move,musical-note,musical-notes,navigate,notifications-off,notifications-outline,notifications,nuclear,nutrition,open,options,outlet,paper-plane,paper,partly-sunny,pause,paw,people,person-add,person,phone-landscape,phone-portrait,photos,pie,pin,pint,pizza,planet,play-circle,play,podium,power,pricetag,pricetags,print,pulse,qr-scanner,quote,radio-button-off,radio-button-on,radio,rainy,recording,redo,refresh-circle,refresh,remove-circle-outline,remove-circle,remove,reorder,repeat,resize,restaurant,return-left,return-right,reverse-camera,rewind,ribbon,rocket,rose,sad,save,school,search,send,settings,share-alt,share,shirt,shuffle,skip-backward,skip-forward,snow,speedometer,square-outline,square,star-half,star-outline,star,stats,stopwatch,subway,sunny,swap,switch,sync,tablet-landscape,tablet-portrait,tennisball,text,thermometer,thumbs-down,thumbs-up,thunderstorm,time,timer,today,train,transgender,trash,trending-down,trending-up,trophy,tv,umbrella,undo,unlock,videocam,volume-high,volume-low,volume-mute,volume-off,wallet,walk,warning,watch,water,wifi,wine,woman|}\" size=\"${3:32}\" />",
+		"description": "Icon"
+	},
+	"wux-icon:logos": {
+		"prefix": "w-icon:logos",
+		"body": "<wux-icon type=\"logo-${2|android,angular,apple,bitbucket,bitcoin,buffer,chrome,closed-captioning,codepen,css3,designernews,dribbble,dropbox,euro,facebook,flickr,foursquare,freebsd-devil,game-controller-a,game-controller-b,github,google,googleplus,hackernews,html5,instagram,ionic,ionitron,javascript,linkedin,markdown,model-s,no-smoking,nodejs,npm,octocat,pinterest,playstation,polymer,python,reddit,rss,sass,skype,slack,snapchat,steam,tumblr,tux,twitch,twitter,usd,vimeo,vk,whatsapp,windows,wordpress,xbox,xing,yahoo,yen,youtube|}\" size=\"${3:32}\" />",
+		"description": "Icon"
+	},
+	"wux-grids": {
+		"prefix": "w-grids",
+		"body": "<wux-grids col=\"${1:3}\">\n\t${0}\n</wux-grids>",
+		"description": "Grids"
+	},
+	"wux-grid": {
+		"prefix": "w-grid",
+		"body": "<wux-grid ${1:thumb=\"${2}\"} ${3:label=\"${4}\"}></wux-grid>",
+		"description": "Grid"
+	},
+	"wux-row": {
+		"prefix": "w-row",
+		"body": "<wux-row gutter=\"${1:0}\">\n\t${0}\n</wux-row>",
+		"description": "Row"
+	},
+	"wux-col": {
+		"prefix": "w-col",
+		"body": "<wux-col ${1:span=\"${2:0}\"} ${3:pull=\"${4:0}\"} ${5:push=\"${6:0}\"} ${7:offset=\"${8:0}\"}>\n\t${0}\n</wux-col>",
+		"description": "Col"
+	},
+	"wux-white-space": {
+		"prefix": "w-white-space",
+		"body": "<wux-white-space ${1:size=\"${2|default,small,large|}\"} />",
+		"description": "WhiteSpace"
+	},
+	"wux-wing-blank": {
+		"prefix": "w-wing-blank",
+		"body": "<wux-wing-blank ${1:size=\"${2|default,small,large|}\"}>\n\t${0}\n</wux-wing-blank>",
+		"description": "WingBlank"
+	},
+	"wux-navbar": {
+		"prefix": "w-navbar",
+		"body": "<wux-navbar ${1:theme=\"${2|light,stable,positive,calm,assertive,balanced,energized,royal,dark|}\"} ${3:leftText=\"${4}\"} ${5:title=\"${6}\"} ${7:rightText=\"${8}\"}></wux-navbar>",
+		"description": "NavBar"
+	},
+	"wux-pagination": {
+		"prefix": "w-pagination",
+		"body": "<wux-pagination ${1:mode=\"${2|button,number,pointer|}\"} defaultCurrent=\"${3}\" total=\"${4}\">\n\t${5:<view slot=\"prev\">${6:Prev}</view>}\n\t${7:<view slot=\"next\">${8:Next}</view>}\n</wux-pagination>",
+		"description": "Pagination"
+	},
+	"wux-pagination:controlled": {
+		"prefix": "w-pagination:controlled",
+		"body": "<wux-pagination ${1:mode=\"${2|button,number,pointer|}\"} current=\"${3}\" total=\"${4}\" controlled ${5:bind:change=\"${6:onPaginationChange}\"}>\n\t${7:<view slot=\"prev\">${8:Prev}</view>}\n\t${9:<view slot=\"next\">${10:Next}</view>}\n</wux-pagination>",
+		"description": "Pagination"
+	},
+	"wux-popover": {
+		"prefix": "w-popover",
+		"body": "<wux-popover ${1:theme=\"${2|light,dark|}\"} ${3:placement=\"${4|top,left,right,bottom,topLeft,topRight,bottomLeft,bottomRight,leftTop,leftBottom,rightTop,rightBottom|}\"} ${5:title=\"${6}\"} ${7:content=\"${8}\"}>\n\t${0}\n</wux-popover>",
+		"description": "Popover"
+	},
+	"wux-popover:controlled": {
+		"prefix": "w-popover:controlled",
+		"body": "<wux-popover ${1:theme=\"${2|light,dark|}\"} ${3:placement=\"${4|top,left,right,bottom,topLeft,topRight,bottomLeft,bottomRight,leftTop,leftBottom,rightTop,rightBottom|}\"} ${5:title=\"${6}\"} ${7:content=\"${8}\"} visible=\"${9}\" controlled ${10:bind:change=\"${11:onPopoverChange}\"}>\n\t${0}\n</wux-popover>",
+		"description": "Popover"
+	},
+	"wux-segmented-control": {
+		"prefix": "w-segmented-control",
+		"body": "<wux-segmented-control ${1:theme=\"${2|balanced,light,stable,positive,calm,assertive,energized,royal,dark|}\"} defaultCurrent=\"${3}\" values=\"${4}\" />",
+		"description": "SegmentedControl"
+	},
+	"wux-segmented-control:controlled": {
+		"prefix": "w-segmented-control:controlled",
+		"body": "<wux-segmented-control ${1:theme=\"${2|balanced,light,stable,positive,calm,assertive,energized,royal,dark|}\"} current=\"${3}\" values=\"${4}\" controlled ${5:bind:change=\"${6:onSegmentChange}\"} />",
+		"description": "SegmentedControl"
+	},
+	"wux-tabbar": {
+		"prefix": "w-tabbar",
+		"body": "<wux-tabbar ${1:theme=\"${2|balanced,light,stable,positive,calm,assertive,energized,royal,dark|}\"} defaultCurrent=\"${3}\">\n\t${0}\n</wux-tabbar>",
+		"description": "TabBar"
+	},
+	"wux-tabbar:controlled": {
+		"prefix": "w-tabbar:controlled",
+		"body": "<wux-tabbar ${1:theme=\"${2|balanced,light,stable,positive,calm,assertive,energized,royal,dark|}\"} current=\"${3}\" controlled ${4:bind:change=\"${5:onTabBarChange}\"}>\n\t${0}\n</wux-tabbar>",
+		"description": "TabBar"
+	},
+	"wux-tabbar-item": {
+		"prefix": "w-tabbar-item",
+		"body": "<wux-tabbar-item ${1:key=\"${2}\"} ${3:title=\"${4}\"}>\n\t${0}\n</wux-tabbar-item>",
+		"description": "TabBar Item"
+	},
+	"wux-tabs": {
+		"prefix": "w-tabs",
+		"body": "<wux-tabs ${1:theme=\"${2|balanced,light,stable,positive,calm,assertive,energized,royal,dark|}\"} defaultCurrent=\"${3}\">\n\t${0}\n</wux-tabs>",
+		"description": "Tabs"
+	},
+	"wux-tabs:controlled": {
+		"prefix": "w-tabs:controlled",
+		"body": "<wux-tabs ${1:theme=\"${2|balanced,light,stable,positive,calm,assertive,energized,royal,dark|}\"} current=\"${3}\" controlled ${4:bind:change=\"${5:onTabsChange}\"}>\n\t${0}\n</wux-tabs>",
+		"description": "Tabs"
+	},
+	"wux-tab": {
+		"prefix": "w-tab",
+		"body": "<wux-tab ${1:key=\"${2}\"} ${3:title=\"${4}\"}></wux-tab>",
+		"description": "Tab"
+	},
+	"wux-calendar": {
+		"prefix": "w-calendar",
+		"body": "<wux-calendar id=\"${1:wux-calendar}\" />",
+		"description": "Calendar"
+	},
+	"wux-cascader": {
+		"prefix": "w-cascader",
+		"body": "<wux-cascader defaultValue=\"${1}\" visible=\"${2}\" ${3:title=\"${4}\"} ${5:options=\"${6}\"} />",
+		"description": "Cascader"
+	},
+	"wux-cascader:controlled": {
+		"prefix": "w-cascader:controlled",
+		"body": "<wux-cascader value=\"${1}\" visible=\"${2}\" ${3:title=\"${4}\"} ${5:options=\"${6}\"} controlled ${7:bind:change=\"${8:onCascaderChange}\"} />",
+		"description": "Cascader"
+	},
+	"wux-checkbox": {
+		"prefix": "w-checkbox",
+		"body": "<wux-checkbox ${1:color=\"${2|balanced,light,stable,positive,calm,assertive,energized,royal,dark|}\"} value=\"${3}\" />",
+		"description": "Checkbox"
+	},
+	"wux-checkbox-group": {
+		"prefix": "w-checkbox-group",
+		"body": "<wux-checkbox-group>\n\t${0}\n</wux-checkbox-group>",
+		"description": "Checkbox Group"
+	},
+	"wux-input-number": {
+		"prefix": "w-input-number",
+		"body": "<wux-input-number ${1:color=\"${2|balanced,light,stable,positive,calm,assertive,energized,royal,dark|}\"} defaultValue=\"${3}\" />",
+		"description": "InputNumber"
+	},
+	"wux-input-number:controlled": {
+		"prefix": "w-input-number:controlled",
+		"body": "<wux-input-number ${1:color=\"${2|balanced,light,stable,positive,calm,assertive,energized,royal,dark|}\"} value=\"${3}\" controlled ${4:bind:change=\"${5:onInputNumberChange}\"} />",
+		"description": "InputNumber"
+	},
+	"wux-radio-group": {
+		"prefix": "w-radio-group",
+		"body": "<wux-radio-group>\n\t${0}\n</wux-radio-group>",
+		"description": "Radio Group"
+	},
+	"wux-radio": {
+		"prefix": "w-radio",
+		"body": "<wux-radio ${1:color=\"${2|balanced,light,stable,positive,calm,assertive,energized,royal,dark|}\"} value=\"${3}\" />",
+		"description": "Radio"
+	},
+	"wux-rater": {
+		"prefix": "w-rater",
+		"body": "<wux-rater defaultValue=\"${1}\" max=\"${2:5}\" />",
+		"description": "Rater"
+	},
+	"wux-rater:controlled": {
+		"prefix": "w-rater:controlled",
+		"body": "<wux-rater value=\"${1}\" max=\"${2:5}\" controlled ${3:bind:change=\"${4:onRaterChange}\"} />",
+		"description": "Rater"
+	},
+	"wux-search-bar": {
+		"prefix": "w-search-bar",
+		"body": "<wux-search-bar defaultValue=\"${1}\" placeholder=\"${2}\" ${3:maxlength=\"${4:140}\"} />",
+		"description": "SearchBar"
+	},
+	"wux-search-bar:controlled": {
+		"prefix": "w-search-bar:controlled",
+		"body": "<wux-search-bar value=\"${1}\" placeholder=\"${2}\" ${3:maxlength=\"${4:140}\"} ${5:bind:change=\"${6:onSearchBarChange}\"} />",
+		"description": "SearchBar"
+	},
+	"wux-select": {
+		"prefix": "w-select",
+		"body": "<wux-select id=\"${1:wux-select}\" />",
+		"description": "Select"
+	},
+	"wux-selectable": {
+		"prefix": "w-selectable",
+		"body": "<wux-selectable ${1:type=\"${2|checkbox,radio|}\"} ${3:color=\"${4|balanced,light,stable,positive,calm,assertive,energized,royal,dark|}\"} value=\"${5}\" />",
+		"description": "Selectable"
+	},
+	"wux-selectable:controlled": {
+		"prefix": "w-selectable:controlled",
+		"body": "<wux-selectable ${1:type=\"${2|checkbox,radio|}\"} ${3:color=\"${4|balanced,light,stable,positive,calm,assertive,energized,royal,dark|}\"} value=\"${5}\" checked=\"${6}\" controlled ${7:bind:change=\"${8:onSelectableChange}\"} />",
+		"description": "Selectable"
+	},
+	"wux-slider": {
+		"prefix": "w-slider",
+		"body": "<wux-slider defaultValue=\"${1}\" min=\"${2:0}\" max=\"${3:100}\" step=\"${4:1}\" />",
+		"description": "Slider"
+	},
+	"wux-slider:controlled": {
+		"prefix": "w-slider:controlled",
+		"body": "<wux-slider value=\"${1}\" min=\"${2:0}\" max=\"${3:100}\" step=\"${4:1}\" controlled ${5:bind:change=\"${6:onSliderChange}\"} />",
+		"description": "Slider"
+	},
+	"wux-switch": {
+		"prefix": "w-switch",
+		"body": "<wux-switch ${1:color=\"${2|balanced,light,stable,positive,calm,assertive,energized,royal,dark|}\"} value=\"${3}\" />",
+		"description": "Switch"
+	},
+	"wux-upload": {
+		"prefix": "w-upload",
+		"body": "<wux-upload ${1:listType=\"${2|text,picture-card|}\"} url=\"${3}\">\n\t${0}\n</wux-upload>",
+		"description": "Upload"
+	},
+	"wux-accordion-group": {
+		"prefix": "w-accordion-group",
+		"body": "<wux-accordion-group>\n\t${0}\n</wux-accordion-group>",
+		"description": "Accordion Group"
+	},
+	"wux-accordion-group:controlled": {
+		"prefix": "w-accordion-group:controlled",
+		"body": "<wux-accordion-group current=\"${1}\" controlled ${2:bind:change=\"${3:onAccordionChange}\"}>\n\t${0}\n</wux-accordion-group>",
+		"description": "Accordion Group"
+	},
+	"wux-accordion": {
+		"prefix": "w-accordion",
+		"body": "<wux-accordion ${1:key=\"${2}\"} ${3:title=\"${4}\"} ${5:content=\"${6}\"}></wux-accordion>",
+		"description": "Accordion"
+	},
+	"wux-alert": {
+		"prefix": "w-alert",
+		"body": "<wux-alert ${1:theme=\"${2|balanced,light,stable,positive,calm,assertive,energized,royal,dark|}\"} title=\"${3}\" />",
+		"description": "Alert"
+	},
+	"wux-avatar": {
+		"prefix": "w-avatar",
+		"body": "<wux-avatar ${1:size=\"${2|default,small,large|}\"} ${3:size=\"${4|circle,square|}\"}>${5}</wux-avatar>",
+		"description": "Avatar Text"
+	},
+	"wux-avatar:src": {
+		"prefix": "w-avatar:src",
+		"body": "<wux-avatar ${1:size=\"${2|default,small,large|}\"} ${3:size=\"${4|circle,square|}\"} src=\"${5}\" />",
+		"description": "Avatar Src"
+	},
+	"wux-badge": {
+		"prefix": "w-badge",
+		"body": "<wux-badge count=\"${1:0}\" overflowCount=\"${2:99}\" ${3:showZero}>\n\t${0}\n</wux-badge>",
+		"description": "Badge"
+	},
+	"wux-badge:dot": {
+		"prefix": "w-badge:dot",
+		"body": "<wux-badge dot>\n\t${0}\n</wux-badge>",
+		"description": "Badge Dot"
+	},
+	"wux-badge:status": {
+		"prefix": "w-badge:status",
+		"body": "<wux-badge ${1:status=\"${2|default,success,processing,error,warning|}\"} ${3:text=\"${4}\"} />",
+		"description": "Badge Status"
+	},
+	"wux-barcode": {
+		"prefix": "w-barcode",
+		"body": "<wux-barcode number=\"${1}\" width=\"${2:200}\" height=\"${3:100}\"></wux-barcode>",
+		"description": "Barcode"
+	},
+	"wux-card": {
+		"prefix": "w-card",
+		"body": "<wux-card title=\"${1}\" ${2:extra=\"${3}\"}>\n\t${0}\n</wux-card>",
+		"description": "Card"
+	},
+	"wux-divider": {
+		"prefix": "w-divider",
+		"body": "<wux-divider ${1:position=\"${2|center,left,right|}\"} ${3:text=\"${4}\"}></wux-divider>",
+		"description": "Divider"
+	},
+	"wux-divider:dashed": {
+		"prefix": "w-divider:dashed",
+		"body": "<wux-divider ${1:position=\"${2|center,left,right|}\"} ${3:text=\"${4}\"} dashed></wux-divider>",
+		"description": "Divider"
+	},
+	"wux-fab-button": {
+		"prefix": "w-fab-button",
+		"body": "<wux-fab-button ${1:theme=\"${2|balanced,light,stable,positive,calm,assertive,energized,royal,dark|}\"} ${3:position=\"${4|bottomRight,topLeft,topRight,bottomLeft|}\"} buttons=\"${5}\" />",
+		"description": "FabButton"
+	},
+	"wux-fab-button:controlled": {
+		"prefix": "w-fab-button:controlled",
+		"body": "<wux-fab-button ${1:theme=\"${2|balanced,light,stable,positive,calm,assertive,energized,royal,dark|}\"} ${3:position=\"${4|bottomRight,topLeft,topRight,bottomLeft|}\"} buttons=\"${5}\" visible=\"${6}\" controlled ${7:bind:change=\"${8:onFabButtonChange}\"} />",
+		"description": "FabButton"
+	},
+	"wux-image": {
+		"prefix": "w-image",
+		"body": "<wux-image ${1:shape=\"${2|normal,rounded,circle,thumbnail|}\"} src=\"${3}\" />",
+		"description": "Image"
+	},
+	"wux-index": {
+		"prefix": "w-index",
+		"body": "<wux-index height=\"${1:300}\" ${2:showIndicator}>\n\t${0}\n</wux-index>",
+		"description": "Index"
+	},
+	"wux-index-item": {
+		"prefix": "w-index-item",
+		"body": "<wux-index-item name=\"${1}\">\n\t${0}\n</wux-index-item>",
+		"description": "Index Item"
+	},
+	"wux-cell-group": {
+		"prefix": "w-cell-group",
+		"body": "<wux-cell-group>\n\t${0}\n</wux-cell-group>",
+		"description": "Cell Group"
+	},
+	"wux-cell": {
+		"prefix": "w-cell",
+		"body": "<wux-cell title=\"${1}\" ${2:extra=\"${3}\"} />",
+		"description": "Cell"
+	},
+	"wux-cell:link": {
+		"prefix": "w-cell:link",
+		"body": "<wux-cell title=\"${1}\" ${2:url=\"${3}\"} ${4:openType=\"${5|navigateTo,redirectTo,switchTab,navigateBack,reLaunch|}\"} isLink />",
+		"description": "Cell"
+	},
+	"wux-cell:openType": {
+		"prefix": "w-cell:openType",
+		"body": "<wux-cell title=\"${1}\" openType=\"${2|contact,share,getUserInfo,getPhoneNumber,launchApp,openSetting,feedback|}\" isLink />",
+		"description": "Cell"
+	},
+	"wux-media": {
+		"prefix": "w-media",
+		"body": "<wux-media ${1:align=\"${2|center,start,end,baseline,stretch|}\"} ${3:title=\"${4}\"} ${5:thumb=\"${6}\"} ${7:label=\"${8}\"} />",
+		"description": "Media"
+	},
+	"wux-notice-bar": {
+		"prefix": "w-notice-bar",
+		"body": "<wux-notice-bar ${1:content=\"${2}\"}></wux-notice-bar>",
+		"description": "NoticeBar"
+	},
+	"wux-notice-bar:loop": {
+		"prefix": "w-notice-bar:loop",
+		"body": "<wux-notice-bar loop ${1:speed=\"${2:25}\"} ${3:content=\"${4}\"}></wux-notice-bar>",
+		"description": "NoticeBar"
+	},
+	"wux-prompt": {
+		"prefix": "w-prompt",
+		"body": "<wux-prompt ${1:icon=\"${2}\"} ${3:title=\"${4}\"} ${5:text=\"${6}\"} ${7:buttons=\"${8}\"} />",
+		"description": "Prompt"
+	},
+	"wux-qrcode": {
+		"prefix": "w-qrcode",
+		"body": "<wux-qrcode width=\"${1:200}\" height=\"${2:200}\" data=\"${3}\" />",
+		"description": "Qrcode"
+	},
+	"wux-steps": {
+		"prefix": "w-steps",
+		"body": "<wux-steps>\n\t${0}\n</wux-steps>",
+		"description": "Steps"
+	},
+	"wux-step": {
+		"prefix": "w-step",
+		"body": "<wux-step ${1:status=\"${2|wait,process,finish,error|}\"} ${3:title=\"${4}\"} ${5:content=\"${6}\"} />",
+		"description": "Step"
+	},
+	"wux-sticky": {
+		"prefix": "w-sticky",
+		"body": "<wux-sticky scrollTop=\"${1}\">\n\t${0}\n</wux-sticky>",
+		"description": "Sticky"
+	},
+	"wux-sticky-item": {
+		"prefix": "w-sticky-item",
+		"body": "<wux-sticky-item ${1:title=\"${2}\"} ${3:content=\"${4}\"}></wux-sticky-item>",
+		"description": "Sticky Item"
+	},
+	"wux-sticky-item:slots": {
+		"prefix": "w-sticky-item:slots",
+		"body": "<wux-sticky-item>\n\t${1:<view slot=\"title\">${2}</view>}\n\t${3:<view slot=\"content\">${4}</view>}\n</wux-sticky-item>",
+		"description": "Sticky Item"
+	},
+	"wux-tag": {
+		"prefix": "w-tag",
+		"body": "<wux-tag color=\"${1}\" ${2:closable}>${0}</wux-tag>",
+		"description": "Tag"
+	},
+	"wux-tag:controlled": {
+		"prefix": "w-tag:controlled",
+		"body": "<wux-tag color=\"${1}\" ${2:closable} visible=\"${3}\" controlled ${4:bind:change=\"${5:onTagChange}\"}>${0}</wux-tag>",
+		"description": "Tag"
+	},
+	"wux-timeago": {
+		"prefix": "w-timeago",
+		"body": "<wux-timeago ${1:lang=\"${2|zh_CN,en,zh_TW|}\"} to=\"${3}\" ${4:from=\"${5}\"} ${6:refreshable} />",
+		"description": "Timeago"
+	},
+	"wux-timeline": {
+		"prefix": "w-timeline",
+		"body": "<wux-timeline ${1:position=\"${2|left,alternate,right|}\"} ${3:pending}>\n\t${0}\n</wux-timeline>",
+		"description": "Timeline"
+	},
+	"wux-timeline-item": {
+		"prefix": "w-timeline-item",
+		"body": "<wux-timeline-item ${1:content=\"${2}\"}></wux-timeline-item>",
+		"description": "Timeline Item"
+	},
+	"wux-vcode": {
+		"prefix": "w-vcode",
+		"body": "<wux-vcode width=\"${1:120}\" height=\"${2:40}\" num=\"${3:6}\" />",
+		"description": "Vcode"
+	},
+	"wux-actionsheet": {
+		"prefix": "w-actionsheet",
+		"body": "<wux-actionsheet id=\"${1:wux-actionsheet}\" />",
+		"description": "ActionSheet"
+	},
+	"wux-backdrop": {
+		"prefix": "w-backdrop",
+		"body": "<wux-backdrop id=\"${1:wux-backdrop}\" />",
+		"description": "Backdrop"
+	},
+	"wux-circle": {
+		"prefix": "w-circle",
+		"body": "<wux-circle percent=\"${1}\" ${2:color=\"${3:#33cd5f}\"} ${4:backgroundColor=\"${5:#f3f3f3}\"}>${0}</wux-circle>",
+		"description": "Circle"
+	},
+	"wux-dialog": {
+		"prefix": "w-dialog",
+		"body": "<wux-dialog id=\"${1:wux-dialog}\" />",
+		"description": "Dialog"
+	},
+	"wux-gallery": {
+		"prefix": "w-gallery",
+		"body": "<wux-gallery id=\"${1:wux-gallery}\" />",
+		"description": "Gallery"
+	},
+	"wux-loading": {
+		"prefix": "w-loading",
+		"body": "<wux-loading id=\"${1:wux-loading}\" />",
+		"description": "Loading"
+	},
+	"wux-notification": {
+		"prefix": "w-notification",
+		"body": "<wux-notification id=\"${1:wux-notification}\" />",
+		"description": "Notification"
+	},
+	"wux-popup": {
+		"prefix": "w-popup",
+		"body": "<wux-popup ${1:position=\"${2|center,top,right,bottom,left|}\"} visible=\"${3}\" ${4:title=\"${5}\"} ${6:content=\"${7}\"}>\n\t${0}\n</wux-popup>",
+		"description": "Popup"
+	},
+	"wux-progress": {
+		"prefix": "w-progress",
+		"body": "<wux-progress ${1:status=\"${2|normal,progress,error,success|}\"} percent=\"${3:0}\" />",
+		"description": "Progress"
+	},
+	"wux-progress:shape": {
+		"prefix": "w-progress:shape",
+		"body": "<wux-progress ${1:status=\"${2|normal,progress,error,success|}\"} ${3:status=\"${4|round,square|}\"} percent=\"${5:0}\" />",
+		"description": "Progress"
+	},
+	"wux-skeleton": {
+		"prefix": "w-skeleton",
+		"body": "<wux-skeleton ${1:active}>\n\t${0}\n</wux-skeleton>",
+		"description": "Skeleton"
+	},
+	"wux-skeleton-paragraph": {
+		"prefix": "w-skeleton-paragraph",
+		"body": "<wux-skeleton-paragraph rows=\"${1:3}\" ${2:rounded} />",
+		"description": "Skeleton Paragraph"
+	},
+	"wux-skeleton-avatar": {
+		"prefix": "w-skeleton-avatar",
+		"body": "<wux-skeleton-avatar />",
+		"description": "Skeleton Avatar"
+	},
+	"wux-spin": {
+		"prefix": "w-spin",
+		"body": "<wux-spin ${1:size=\"${2|default,small,large|}\"} ${3:tip=\"${4}\"} />",
+		"description": "Spin"
+	},
+	"wux-spin:nested": {
+		"prefix": "w-spin:nested",
+		"body": "<wux-spin ${1:size=\"${2|default,small,large|}\"} ${3:tip=\"${4}\"} ${5:spinning} nested>\n\t${0}\n</wux-spin>",
+		"description": "Spin"
+	},
+	"wux-toast": {
+		"prefix": "w-toast",
+		"body": "<wux-toast id=\"${1:wux-toast}\" />",
+		"description": "Toast"
+	},
+	"wux-toptips": {
+		"prefix": "w-toptips",
+		"body": "<wux-toptips id=\"${1:wux-toptips}\" />",
+		"description": "Toptips"
+	},
+	"wux-filterbar": {
+		"prefix": "w-filterbar",
+		"body": "<wux-filterbar items=\"${1}\" ${2:bind:change=\"${3:onFilterBarChange}\"} />",
+		"description": "FilterBar"
+	},
+	"wux-keyboard": {
+		"prefix": "w-keyboard",
+		"body": "<wux-keyboard id=\"${1:wux-keyboard}\" />",
+		"description": "KeyBoard"
+	},
+	"wux-refresher": {
+		"prefix": "w-refresher",
+		"body": "<wux-refresher id=\"${1:wux-refresher}\" ${2:bind:refresh=\"${3:onRefresh}\"}>\n\t${0}\n</wux-refresher>",
+		"description": "Refresher"
+	},
+	"wux-result": {
+		"prefix": "w-result",
+		"body": "<wux-result ${1:icon=\"${2|success,success_no_circle,info,warn,waiting,cancel,download,search,clear|}\"} ${3:title=\"${4}\"} ${5:label=\"${6}\"} ${7:buttons=\"${8}\"} />",
+		"description": "Result"
+	},
+	"wux-swipe-action-group": {
+		"prefix": "w-swipe-action-group",
+		"body": "<wux-swipe-action-group>\n\t${0}\n</wux-swipe-action-group>",
+		"description": "SwipeActionGroup"
+	},
+	"wux-swipe-action": {
+		"prefix": "w-swipe-action",
+		"body": "<wux-swipe-action ${1:left=\"${2}\"} ${3:right=\"${4}\"}>\n\t${0}\n</wux-swipe-action>",
+		"description": "SwipeAction"
+	},
+	"wux-swipe-action:slots": {
+		"prefix": "w-swipe-action:slots",
+		"body": "<wux-swipe-action>\n\t${1:<view slot=\"left\">${2}</view>}\n\t${3:<view slot=\"right\">${4}</view>}\n</wux-swipe-action>",
+		"description": "SwipeAction"
+	}
+}

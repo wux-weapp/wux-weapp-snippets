@@ -1,0 +1,253 @@
+{
+	"$wuxCalendar": {
+		"prefix": "$wuxCalendar",
+		"body": [
+			"\\$wuxCalendar().open({",
+			"\tvalue: '${1}',",
+			"\tonChange(values, displayValues) {",
+			"\t\t$2",
+			"\t},",
+			"})"
+		],
+		"description": "$wuxCalendar"
+	},
+	"$wuxSelect": {
+		"prefix": "$wuxSelect",
+		"body": [
+			"\\$wuxSelect().open({",
+			"\tvalue: '${1}',",
+			"\toptions: ${2:[]},",
+			"\tmultiple: ${3:false},",
+			"\tonConfirm(value, index, options) {",
+			"\t\t$4",
+			"\t},",
+			"})"
+		],
+		"description": "$wuxSelect"
+	},
+	"$wuxActionSheet": {
+		"prefix": "$wuxActionSheet",
+		"body": [
+			"\\$wuxActionSheet().showSheet({",
+			"\ttheme: '${1|ios,wx|}',",
+			"\ttitleText: '${2}',",
+			"\tbuttons: ${3:[]},",
+			"\tbuttonClicked(index, item) {",
+			"\t\t$4",
+      		"\t},",
+			"\tcancelText: '${5:取消}',",
+			"\tcancel() {},",
+			"\tdestructiveText: '${6:删除}',",
+			"\tdestructiveButtonClicked() {},",
+			"})"
+		],
+		"description": "$wuxActionSheet"
+	},
+	"$wuxBackdrop": {
+		"prefix": "$wuxBackdrop",
+		"body": [
+			"\\$wuxBackdrop.${1|retain,release|}()"
+		],
+		"description": "$wuxBackdrop"
+	},
+	"$wuxDialog": {
+		"prefix": "$wuxDialog",
+		"body": [
+			"\\$wuxDialog().open({",
+			"\ttitle: '${1}',",
+			"\tcontent: '${2}',",
+			"\tbuttons: ${3:[]},",
+			"})"
+		],
+		"description": "$wuxDialog"
+	},
+	"$wuxDialog:confirm": {
+		"prefix": "$wuxDialog:confirm",
+		"body": [
+			"\\$wuxDialog().confirm({",
+			"\ttitle: '${1}',",
+			"\tcontent: '${2}',",
+			"\tonConfirm(e) {",
+			"\t\t$3",
+      		"\t},",
+			"\tonCancel(e) {",
+			"\t\t$4",
+      		"\t},",
+			"})"
+		],
+		"description": "$wuxDialog"
+	},
+	"$wuxDialog:alert": {
+		"prefix": "$wuxDialog:alert",
+		"body": [
+			"\\$wuxDialog().alert({",
+			"\ttitle: '${1}',",
+			"\tcontent: '${2}',",
+			"\tonConfirm(e) {",
+			"\t\t$3",
+      		"\t},",
+			"})"
+		],
+		"description": "$wuxDialog"
+	},
+	"$wuxDialog:prompt": {
+		"prefix": "$wuxDialog:prompt",
+		"body": [
+			"\\$wuxDialog().prompt({",
+			"\ttitle: '${1}',",
+			"\tcontent: '${2}',",
+			"\tfieldtype: '${3:text}',",
+			"\tpassword: ${4:false},",
+			"\tdefaultText: '${5}',",
+			"\tplaceholder: '${6}',",
+			"\tmaxlength: ${7:-1},",
+			"\tonConfirm(e, response) {",
+			"\t\t$8",
+      		"\t},",
+			"})"
+		],
+		"description": "$wuxDialog"
+	},
+	"$wuxGallery": {
+		"prefix": "$wuxGallery",
+		"body": [
+			"\\$wuxGallery().show({",
+			"\tcurrent: '${1}',",
+			"\turls: ${2:[]},",
+			"\tdelete(current, urls) {",
+			"\t\t$3",
+			"\t\treturn true",
+			"\t},",
+			"\tonTap(current, urls) {",
+			"\t\t$4",
+			"\t\treturn true",
+			"\t},",
+			"})"
+		],
+		"description": "$wuxGallery"
+	},
+	"$wuxLoading": {
+		"prefix": "$wuxLoading",
+		"body": [
+			"\\$wuxLoading().show({",
+			"\ttext: '${1:数据加载中}',",
+			"})"
+		],
+		"description": "$wuxLoading"
+	},
+	"$wuxNotification": {
+		"prefix": "$wuxNotification",
+		"body": [
+			"\\$wuxNotification().show({",
+			"\timage: '${1}',",
+			"\ttitle: '${2}',",
+			"\ttext: '${3}',",
+			"\tdata: ${4:''},",
+			"\tduration: ${5:3000},",
+			"\tonClick(data) {",
+			"\t\t$6",
+			"\t},",
+			"\tonClose(data) {",
+			"\t\t$7",
+			"\t},",
+			"})"
+		],
+		"description": "$wuxNotification"
+	},
+	"$wuxToast": {
+		"prefix": "$wuxToast",
+		"body": [
+			"\\$wuxToast().show({",
+			"\ttype: '${1|default,success,cancel,forbidden,text|}',",
+			"\tduration: ${2:1500},",
+			"\tcolor: '${3:#fff}',",
+			"\ttext: '${4}',",
+			"\tsuccess() {",
+			"\t\t$5",
+			"\t},",
+			"})"
+		],
+		"description": "$wuxToast"
+	},
+	"$wuxToptips": {
+		"prefix": "$wuxToptips",
+		"body": [
+			"\\$wuxToptips().show({",
+			"\ticon: '${1|success,info,warn,cancel|}',",
+			"\tduration: ${2:3000},",
+			"\ttext: '${3}',",
+			"\tsuccess() {",
+			"\t\t$4",
+			"\t},",
+			"})"
+		],
+		"description": "$wuxToptips"
+	},
+	"$wuxToptips:success": {
+		"prefix": "$wuxToptips:success",
+		"body": [
+			"\\$wuxToptips().success({",
+			"\tduration: ${1:3000},",
+			"\ttext: '${2}',",
+			"\tsuccess() {",
+			"\t\t$3",
+			"\t},",
+			"})"
+		],
+		"description": "$wuxToptips"
+	},
+	"$wuxToptips:info": {
+		"prefix": "$wuxToptips:info",
+		"body": [
+			"\\$wuxToptips().info({",
+			"\tduration: ${1:3000},",
+			"\ttext: '${2}',",
+			"\tsuccess() {",
+			"\t\t$3",
+			"\t},",
+			"})"
+		],
+		"description": "$wuxToptips"
+	},
+	"$wuxToptips:warn": {
+		"prefix": "$wuxToptips:warn",
+		"body": [
+			"\\$wuxToptips().warn({",
+			"\tduration: ${1:3000},",
+			"\ttext: '${2}',",
+			"\tsuccess() {",
+			"\t\t$3",
+			"\t},",
+			"})"
+		],
+		"description": "$wuxToptips"
+	},
+	"$wuxToptips:error": {
+		"prefix": "$wuxToptips:error",
+		"body": [
+			"\\$wuxToptips().error({",
+			"\tduration: ${1:3000},",
+			"\ttext: '${2}',",
+			"\tsuccess() {",
+			"\t\t$3",
+			"\t},",
+			"})"
+		],
+		"description": "$wuxToptips"
+	},
+	"$wuxKeyBoard": {
+		"prefix": "$wuxKeyBoard",
+		"body": [
+			"\\$wuxKeyBoard().show({",
+			"\ttitleText: '${1:安全键盘}',",
+			"\tcancelText: '${2:取消}',",
+			"\tinputText: '${3:输入数字密码}',",
+			"\tonClose(value) {",
+			"\t\t$4",
+			"\t\treturn true",
+			"\t},",
+			"})"
+		],
+		"description": "$wuxKeyBoard"
+	}
+}
