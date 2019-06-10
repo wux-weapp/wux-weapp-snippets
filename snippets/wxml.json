@@ -139,6 +139,66 @@
 		"body": "<wux-checkbox-group>\n\t${0}\n</wux-checkbox-group>",
 		"description": "Checkbox Group"
 	},
+	"wux-field": {
+		"prefix": "w-field",
+		"body": "<wux-field name=\"${1}\" ${2:initialValue=\"${3}\"}>\n\t${0}\n</wux-field>",
+		"description": "Field"
+	},
+	"wux-field:checkbox": {
+		"prefix": "w-field:checkbox",
+		"body": "<wux-field name=\"${1}\" ${2:initialValue=\"${3}\"}>\n\t<wux-checkbox-group ${4:options=\"${5}\"}>${0}</wux-checkbox-group>\n</wux-field>",
+		"description": "Field"
+	},
+	"wux-field:input": {
+		"prefix": "w-field:input",
+		"body": "<wux-field name=\"${1}\" ${2:initialValue=\"${3}\"}>\n\t<wux-input />\n</wux-field>",
+		"description": "Field"
+	},
+	"wux-field:input-number": {
+		"prefix": "w-field:input-number",
+		"body": "<wux-field name=\"${1}\" ${2:initialValue=\"${3}\"}>\n\t<wux-input-number />\n</wux-field>",
+		"description": "Field"
+	},
+	"wux-field:radio": {
+		"prefix": "w-field:radio",
+		"body": "<wux-field name=\"${1}\" ${2:initialValue=\"${3}\"}>\n\t<wux-radio-group ${4:options=\"${5}\"}>${0}</wux-radio-group>\n</wux-field>",
+		"description": "Field"
+	},
+	"wux-field:rater": {
+		"prefix": "w-field:rater",
+		"body": "<wux-field name=\"${1}\" ${2:initialValue=\"${3}\"}>\n\t<wux-rater />\n</wux-field>",
+		"description": "Field"
+	},
+	"wux-field:slider": {
+		"prefix": "w-field:slider",
+		"body": "<wux-field name=\"${1}\" ${2:initialValue=\"${3}\"}>\n\t<wux-slider />\n</wux-field>",
+		"description": "Field"
+	},
+	"wux-field:switch": {
+		"prefix": "w-field:switch",
+		"body": "<wux-field name=\"${1}\" ${2:initialValue=\"${3}\"} valuePropName=\"inputChecked\">\n\t<wux-switch />\n</wux-field>",
+		"description": "Field"
+	},
+	"wux-field:textarea": {
+		"prefix": "w-field:textarea",
+		"body": "<wux-field name=\"${1}\" ${2:initialValue=\"${3}\"}>\n\t<wux-textarea />\n</wux-field>",
+		"description": "Field"
+	},
+	"wux-form": {
+		"prefix": "w-form",
+		"body": "<wux-form id=\"${1:wux-form}\" ${2:bind:change=\"${3:onFormChange}\"}>\n\t${0}\n</wux-form>",
+		"description": "Form"
+	},
+	"wux-input": {
+		"prefix": "w-input",
+		"body": "<wux-input defaultValue=\"${1}\" ${2:type=\"${3|text,number,idcard,digit|}\"} />",
+		"description": "Input"
+	},
+	"wux-input:controlled": {
+		"prefix": "w-input:controlled",
+		"body": "<wux-input value=\"${1}\" ${2:type=\"${3|text,number,idcard,digit|}\"} controlled ${4:bind:change=\"${5:onInputChange}\"} />",
+		"description": "Input"
+	},
 	"wux-input-number": {
 		"prefix": "w-input-number",
 		"body": "<wux-input-number ${1:color=\"${2|balanced,light,stable,positive,calm,assertive,energized,royal,dark|}\"} defaultValue=\"${3}\" />",
@@ -208,6 +268,16 @@
 		"prefix": "w-switch",
 		"body": "<wux-switch ${1:color=\"${2|balanced,light,stable,positive,calm,assertive,energized,royal,dark|}\"} value=\"${3}\" />",
 		"description": "Switch"
+	},
+	"wux-textarea": {
+		"prefix": "w-textarea",
+		"body": "<wux-textarea defaultValue=\"${1}\" ${2:rows=\"${3|3|}\"} />",
+		"description": "Textarea"
+	},
+	"wux-textarea:controlled": {
+		"prefix": "w-textarea:controlled",
+		"body": "<wux-textarea value=\"${1}\" ${2:rows=\"${3|3|}\"} controlled ${4:bind:change=\"${5:onTextareaChange}\"} />",
+		"description": "Textarea"
 	},
 	"wux-upload": {
 		"prefix": "w-upload",
@@ -428,6 +498,11 @@
 		"prefix": "w-gallery",
 		"body": "<wux-gallery id=\"${1:wux-gallery}\" />",
 		"description": "Gallery"
+	},
+	"wux-landscape": {
+		"prefix": "w-landscape",
+		"body": "<wux-landscape visible=\"${1}\" bind:close=\"${2:onLandscapeClose}\">\n\t${0}\n</wux-landscape>",
+		"description": "Landscape"
 	},
 	"wux-loading": {
 		"prefix": "w-loading",
