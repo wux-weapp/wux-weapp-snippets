@@ -129,6 +129,11 @@
 		"body": "<wux-cascader value=\"${1}\" visible=\"${2}\" ${3:title=\"${4}\"} ${5:options=\"${6}\"} controlled ${7:bind:change=\"${8:onCascaderChange}\"} />",
 		"description": "Cascader"
 	},
+	"wux-cascader-picker-view": {
+		"prefix": "w-cascader-picker-view",
+		"body": "<wux-cascader-picker-view value=\"${1}\" options=\"${2}\" ${3:bind:valueChange=\"${4:onCascaderPickerViewChange}\"} />",
+		"description": "CascaderPickerView"
+	},
 	"wux-checkbox": {
 		"prefix": "w-checkbox",
 		"body": "<wux-checkbox ${1:color=\"${2|balanced,light,stable,positive,calm,assertive,energized,royal,dark|}\"} value=\"${3}\" />",
@@ -138,6 +143,21 @@
 		"prefix": "w-checkbox-group",
 		"body": "<wux-checkbox-group>\n\t${0}\n</wux-checkbox-group>",
 		"description": "Checkbox Group"
+	},
+	"wux-date-picker": {
+		"prefix": "w-date-picker",
+		"body": "<wux-date-picker ${1:mode=\"${2|datetime,date,year,month,time|}\"} value=\"${3}\" ${4:bind:change=\"${5:onDatePickerChange}\"} />",
+		"description": "DatePicker"
+	},
+	"wux-date-picker:controlled": {
+		"prefix": "w-date-picker:controlled",
+		"body": "<wux-date-picker ${1:mode=\"${2|datetime,date,year,month,time|}\"} value=\"${3}\" visible=\"${4}\" controlled ${5:bind:visibleChange=\"${6:onDatePickerVisibleChange}\"} ${7:bind:change=\"${8:onDatePickerChange}\"} />",
+		"description": "DatePicker"
+	},
+	"wux-date-picker-view": {
+		"prefix": "w-date-picker-view",
+		"body": "<wux-date-picker-view ${1:mode=\"${2|datetime,date,year,month,time|}\"} value=\"${3}\" ${4:bind:valueChange=\"${5:onDatePickerViewChange}\"} />",
+		"description": "DatePickerView"
 	},
 	"wux-field": {
 		"prefix": "w-field",
@@ -208,6 +228,41 @@
 		"prefix": "w-input-number:controlled",
 		"body": "<wux-input-number ${1:color=\"${2|balanced,light,stable,positive,calm,assertive,energized,royal,dark|}\"} value=\"${3}\" controlled ${4:bind:change=\"${5:onInputNumberChange}\"} />",
 		"description": "InputNumber"
+	},
+	"wux-multi-picker-view": {
+		"prefix": "w-multi-picker-view",
+		"body": "<wux-multi-picker-view value=\"${1}\" options=\"${2}\" ${3:bind:valueChange=\"${4:onMultiPickerViewChange}\"} />",
+		"description": "MultiPickerView"
+	},
+	"wux-picker": {
+		"prefix": "w-picker",
+		"body": "<wux-picker value=\"${1}\" options=\"${2}\" ${3:bind:change=\"${4:onPickerChange}\"} />",
+		"description": "Picker"
+	},
+	"wux-picker:controlled": {
+		"prefix": "w-picker:controlled",
+		"body": "<wux-picker value=\"${1}\" options=\"${2}\" visible=\"${3}\" controlled ${4:bind:visibleChange=\"${5:onPickerVisibleChange}\"} ${6:bind:change=\"${7:onPickerChange}\"} />",
+		"description": "Picker"
+	},
+	"wux-picker-view": {
+		"prefix": "w-picker-view",
+		"body": "<wux-picker-view defaultValue=\"${1}\" options=\"${2}\" />",
+		"description": "PickerView"
+	},
+	"wux-picker-view:controlled": {
+		"prefix": "w-picker-view:controlled",
+		"body": "<wux-picker-view value=\"${1}\" options=\"${2}\" controlled ${3:bind:valueChange=\"${4:onPickerViewChange}\"} />",
+		"description": "PickerView"
+	},
+	"wux-popup-select": {
+		"prefix": "w-popup-select",
+		"body": "<wux-popup-select value=\"${1}\" options=\"${2}\" ${3:bind:change=\"${4:onPopupSelectChange}\"} />",
+		"description": "PopupSelect"
+	},
+	"wux-popup-select:controlled": {
+		"prefix": "w-popup-select:controlled",
+		"body": "<wux-popup-select value=\"${1}\" options=\"${2}\" visible=\"${3}\" controlled ${4:bind:visibleChange=\"${5:onPopupSelectVisibleChange}\"} ${6:bind:change=\"${7:onPopupSelectChange}\"} />",
+		"description": "PopupSelect"
 	},
 	"wux-radio-group": {
 		"prefix": "w-radio-group",

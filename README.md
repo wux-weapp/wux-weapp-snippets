@@ -2,6 +2,10 @@
 
 Wux Weapp Snippets for VS Code.
 
+## Usages
+
+![Usage](screenshots/usage.mp4)
+
 ## Available Snippets
 
 ### WXML
@@ -34,8 +38,12 @@ Wux Weapp Snippets for VS Code.
 | w-calendar | `wux-calendar` | Calendar |
 | w-cascader | `wux-cascader` | Cascader |
 | w-cascader:controlled | `wux-cascader` | Cascader |
+| w-cascader-picker-view | `wux-cascader-picker-view` | CascaderPickerView |
 | w-checkbox | `wux-checkbox` | Checkbox |
 | w-checkbox-group | `wux-checkbox-group` | Checkbox Group |
+| w-date-picker | `wux-date-picker` | DatePicker |
+| w-date-picker:controlled | `wux-date-picker` | DatePicker |
+| w-date-picker-view | `wux-date-picker-view` | DatePickerView |
 | w-field | `wux-field` | Field |
 | w-field:checkbox | `wux-field` | Field Checkbox |
 | w-field:input | `wux-field` | Field Input |
@@ -50,6 +58,13 @@ Wux Weapp Snippets for VS Code.
 | w-input:controlled | `wux-input` | Input |
 | w-input-number | `wux-input-number` | InputNumber |
 | w-input-number:controlled | `wux-input-number` | InputNumber |
+| w-multi-picker-view | `wux-multi-picker-view` | MultiPickerView |
+| w-picker | `wux-picker` | Picker |
+| w-picker:controlled | `wux-picker` | Picker |
+| w-picker-view | `wux-picker-view` | PickerView |
+| w-picker-view:controlled | `wux-picker-view` | PickerView |
+| w-popup-select | `wux-popup-select` | PopupSelect |
+| w-popup-select:controlled | `wux-popup-select` | PopupSelect |
 | w-radio-group | `wux-radio-group` | Radio Group |
 | w-radio | `wux-radio` | Radio |
 | w-rater | `wux-rater` | Rater |
