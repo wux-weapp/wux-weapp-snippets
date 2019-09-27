@@ -3,7 +3,7 @@
     "displayName": "Wux Weapp Snippets",
     "description": "Wux Weapp Snippets for VS Code.",
     "icon": "wux-weapp-snippets.png",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "homepage": "https://github.com/wux-weapp/wux-weapp-snippets/blob/master/README.md",
     "bugs": {
         "url": "https://github.com/wux-weapp/wux-weapp-snippets/issues"

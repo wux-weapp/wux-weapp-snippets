@@ -361,12 +361,12 @@
 	},
 	"wux-avatar": {
 		"prefix": "w-avatar",
-		"body": "<wux-avatar ${1:size=\"${2|default,small,large|}\"} ${3:size=\"${4|circle,square|}\"}>${5}</wux-avatar>",
+		"body": "<wux-avatar ${1:size=\"${2|default,small,large|}\"} ${3:shape=\"${4|circle,square|}\"}>${5}</wux-avatar>",
 		"description": "Avatar Text"
 	},
 	"wux-avatar:src": {
 		"prefix": "w-avatar:src",
-		"body": "<wux-avatar ${1:size=\"${2|default,small,large|}\"} ${3:size=\"${4|circle,square|}\"} src=\"${5}\" />",
+		"body": "<wux-avatar ${1:size=\"${2|default,small,large|}\"} ${3:shape=\"${4|circle,square|}\"} src=\"${5}\" />",
 		"description": "Avatar Src"
 	},
 	"wux-badge": {
@@ -653,5 +653,15 @@
 		"prefix": "w-swipe-action:slots",
 		"body": "<wux-swipe-action>\n\t${1:<view slot=\"left\">${2}</view>}\n\t${3:<view slot=\"right\">${4}</view>}\n</wux-swipe-action>",
 		"description": "SwipeAction"
+	},
+	"wux-virtual-list": {
+		"prefix": "w-virtual-list",
+		"body": "<wux-virtual-list id=\"${1:wux-virtual-list}\" ${2:bind:change=\"${3:onVirtualListChange}\"}>\n\t${0}\n</wux-virtual-list>",
+		"description": "VirtualList"
+	},
+	"wux-virtual-item": {
+		"prefix": "w-virtual-item",
+		"body": "<wux-virtual-item wx:for=\"{{ ${1:virtual.items} }}\" wx:key=\"\">\n\t${0}\n</wux-virtual-item>",
+		"description": "VirtualList"
 	}
 }

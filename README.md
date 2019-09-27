@@ -143,6 +143,8 @@ Wux Weapp Snippets for VS Code.
 | w-swipe-action-group | `wux-swipe-action-group` | SwipeActionGroup |
 | w-swipe-action | `wux-swipe-action` | SwipeAction |
 | w-swipe-action:slots | `wux-swipe-action` | SwipeAction |
+| w-virtual-list | `wux-virtual-list` | VirtualList |
+| w-virtual-list | `wux-virtual-item` | VirtualList |
 
 ### JavaScript
 
